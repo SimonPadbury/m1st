@@ -1,0 +1,88 @@
+/**!
+ * m1st CSS
+ */
+
+.site-header-image {
+	display: block;
+	margin: auto;
+}
+
+.wp-caption {}
+.wp-caption-text {}
+.sticky {}
+.screen-reader-text {}
+.gallery-caption {}
+
+.bypostauthor {}
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+}
+
+/* Max img widths */
+
+img,
+.size-auto,
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Author bio */
+
+.author-bio .avatar {
+	border: 1px solid #dee2e6;
+	border-radius: 50%;
+}
+
+/* Main content */
+
+/* Sidebar */
+
+/* Hide form placeholders on focus */
+
+input:focus::-webkit-input-placeholder { color: transparent; }
+input:focus:-moz-placeholder { color: transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color: transparent; } /* FF 19+ */
+textarea:focus::-webkit-input-placeholder { color: transparent; }
+textarea:focus:-moz-placeholder { color: transparent; } /* FF 4-18 */
+textarea:focus::-moz-placeholder { color: transparent; } /* FF 19+ */
+
+/* Comments */
+
+#comments,
+#reply-title {
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.commentlist,
+.commentlist ul {
+	padding-left: 0;
+}
+
+.commentlist li {
+	padding: 1rem;
+}
+
+.comment-meta {
+	margin-bottom: 1rem;
+}
+.commentlist .children {
+	margin-top: 1rem;
+}
+
+
+/* Site footer */
