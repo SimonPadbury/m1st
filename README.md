@@ -12,7 +12,7 @@
 > 
 > Contributions most welcome. :o)
 
-##To Do's
+## To Do's
 
 * [√] Enqueue the Materialize CSS and JS from CDN
 * [started] Layout
