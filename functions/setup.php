@@ -11,10 +11,10 @@ if ( ! function_exists('m1st_setup') ) {
 
 		add_theme_support('post-thumbnails');
 
-		update_option('thumbnail_size_w', 285); /* internal max-width of col-3 */
-		update_option('small_size_w', 350); /* internal max-width of col-4 */
-		update_option('medium_size_w', 730); /* internal max-width of col-8 */
-		update_option('large_size_w', 1110); /* internal max-width of col-12 */
+		update_option('thumbnail_size_w', 320);
+		update_option('small_size_w', 640);
+		update_option('medium_size_w', 960);
+		update_option('large_size_w', 1200);
 
 		if ( ! isset($content_width) ) {
 			$content_width = 1100;
@@ -82,7 +82,15 @@ if ( ! function_exists( 'm1st_post_date' ) ) {
 
 if ( ! function_exists('m1st_excerpt_more') ) {
 	function m1st_excerpt_more() {
-		return '&hellip;</p><p><a class="btn btn-primary" href="'. get_permalink() . '">' . __('Continue reading', 'm1st') . ' <i class="fas fa-arrow-right"></i>' . '</a></p>';
+		return '&hellip;</p><p><a class="btn btn-primary" href="'. get_permalink() . '">' . __('Continue reading', 'm1st') . ' <i class="material-icons">arrow_forward</i>' . '</a></p>';
 	}
 }
 add_filter('excerpt_more', 'm1st_excerpt_more');
+
+/**
+ * Register Menus
+ */
+
+register_nav_menu('navbar', __('Navbar', 'm1st'));
+
+register_nav_menu('sidenav', __('Sidenav', 'm1st'));

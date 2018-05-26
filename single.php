@@ -5,7 +5,7 @@
 
     <div class="col s8">
       <div id="content" role="main">
-        <?php get_template_part('loops/page-content'); ?>
+        <?php get_template_part('loops/single-post', get_post_format()); ?>
       </div><!-- /#content -->
     </div>
 

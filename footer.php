@@ -1,19 +1,25 @@
-<footer class="page-footer">
+<?php dynamic_sidebar('fab-widget-area'); ?>
+
+<footer class="page-footer" id="footer" role="navigation">
   <div class="container">
     <div class="row">
-      <div class="col s12">
 
-        <?php if(is_active_sidebar('footer-widget-area')): ?>
-        <div class="row border-bottom pt-5 pb-4" id="footer" role="navigation">
-          <?php dynamic_sidebar('footer-widget-area'); ?>
-        </div>
-        <?php endif; ?>
+      <?php if(is_active_sidebar('footer-1-widget-area')): ?>
+        <?php dynamic_sidebar('footer-1-widget-area'); ?>
+      <?php endif; ?>
 
-      </div>
+      <?php if(is_active_sidebar('footer-2-widget-area')): ?>
+        <?php dynamic_sidebar('footer-2-widget-area'); ?>
+      <?php endif; ?>
+
+      <?php if(is_active_sidebar('footer-3-widget-area')): ?>
+        <?php dynamic_sidebar('footer-3-widget-area'); ?>
+      <?php endif; ?>
+
     </div>
   </div>
   <div class="footer-copyright">
-    <div class="container">
+    <div class="container center-align">
     &copy; <?php echo date('Y'); ?> <a class="grey-text text-lighten-4" href="<?php echo home_url('/'); ?>"><?php bloginfo('name'); ?></a>
     </div>
   </div>

@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 
-<div class="container">
+<main class="container">
   <div class="row">
 
-    <div class="col sm8">
+    <div class="col s8">
       <div id="content" role="main">
         <div class="alert alert-warning">
           <h1>
@@ -17,6 +17,6 @@
     <?php get_sidebar(); ?>
 
   </div><!-- /.row -->
-</div><!-- /.container-responsive -->
+</main><!-- /.container -->
 
 <?php get_footer(); ?>

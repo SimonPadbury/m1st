@@ -11,10 +11,12 @@
         <?php the_title()?>
       </h1>
     </header>
-    <main>
-      <?php the_content()?>
-      <?php wp_link_pages(); ?>
-    </main>
+    <div>
+      <?php 
+        the_post_thumbnail();
+        the_content()
+      ?>
+    </div>
   </article>
 <?php
   endwhile; else:

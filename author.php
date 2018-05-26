@@ -13,10 +13,10 @@ if (
 ?>
 <?php get_header(); ?>
 
-<div class="container">
+<main class="container">
   <div class="row">
 
-    <div class="col sm8">
+    <div class="col s8">
       <div id="content" role="main">
         <header class="mb-4 border-bottom">
           <?php if ($isAuthor === true): ?>
@@ -36,9 +36,7 @@ if (
 
     <?php get_sidebar(); ?>
 
-  </div>
-  <!-- /.row -->
-</div>
-<!-- /.container-responsive -->
+  </div><!-- /.row -->
+</main><!-- /.container -->
 
 <?php get_footer(); ?>

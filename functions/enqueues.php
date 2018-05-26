@@ -10,7 +10,10 @@ if ( ! function_exists('m1st_enqueues') ) {
 
 		wp_register_style('materialize-css', 'https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css', false, '1.0.0-beta', null);
 		wp_enqueue_style('materialize-css');
-		
+
+		wp_register_style('material-icons-css', get_template_directory_uri() . '/theme/css/material-icons.css');
+		wp_enqueue_style('material-icons-css');
+
 		wp_register_style('m1st-css', get_template_directory_uri() . '/theme/css/m1st.css');
 		wp_enqueue_style('m1st-css');
 

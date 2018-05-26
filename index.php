@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="container">
+<main class="container">
   <div class="row">
 
     <div class="col s8">
@@ -12,6 +12,6 @@
     <?php get_sidebar(); ?>
 
   </div><!-- /.row -->
-</div><!-- /.container-responsive -->
+</main><!-- /.container -->
 
 <?php get_footer(); ?>

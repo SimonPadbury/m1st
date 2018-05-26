@@ -16,9 +16,9 @@
 <?php if ( function_exists('m1st_pagination') ) { m1st_pagination(); } else if ( is_paged() ) { ?>
 <ul class="pagination">
   <li class="page-item older">
-    <?php next_posts_link('<i class="fas fa-arrow-left"></i> ' . __('Previous', 'm1st')) ?></li>
+    <?php next_posts_link('<i class="material-icons">arrow_back</i> ' . __('Previous', 'm1st')) ?></li>
   <li class="page-item newer">
-    <?php previous_posts_link(__('Next', 'm1st') . ' <i class="fas fa-arrow-right"></i>') ?></li>
+    <?php previous_posts_link(__('Next', 'm1st') . ' <i class="material-icons">arrow_forward</i>') ?></li>
 </ul>
 <?php } ?>
 
