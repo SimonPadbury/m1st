@@ -19,9 +19,6 @@ if ( ! function_exists('m1st_enqueues') ) {
 
 		// Scripts
 
-		wp_register_script('font-awesome', 'https://use.fontawesome.com/releases/v5.0.13/js/all.js', false, '5.13.0', null);
-		wp_enqueue_script('font-awesome');
-
 		wp_register_script('modernizr',  'https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js', false, '2.8.3', true);
 		wp_enqueue_script('modernizr');
 

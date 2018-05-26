@@ -12,7 +12,7 @@
     <?php the_excerpt(); ?>
   </article>
 <?php endwhile; else: ?>
-  <div class="alert alert-warning">
-    <i class="fas fa-exclamation-triangle"></i> <?php _e('Sorry, your search yielded no results.', 'm1st'); ?>
+  <div class="orange">
+    <i class="material-icons">warning</i> <?php _e('Sorry, your search yielded no results.', 'm1st'); ?>
   </div>
 <?php endif; ?>
