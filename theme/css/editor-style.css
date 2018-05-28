@@ -1,13 +1,13 @@
 /**!
  * m1st WordPress Editor stylesheet
  * ================================
- * 1. Import the Bootstrap CSS from a CDN (the same CSS as is used for the front-end of this theme).
+ * 1. Import Materialize CSS from a CDN (the same CSS as is used for the front-end of this theme).
  * 2. Import your theme's CSS (the same as is used for the front-end).
  * 3. Then add some CSS to improve your experience in the tiny-mce editor.
  */
 
-@import url('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css');
-
+@import url('https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css');
+@import url('material-icons.css');
 @import url('m1st.css');
 
 body#tinymce {

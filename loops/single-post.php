@@ -45,9 +45,8 @@ The Single Post
       //comments_template();
       comments_template('/loops/single-post-comments.php');
 		endif;
-  endwhile; else:
-    wp_redirect(esc_url( home_url() ) . '/404', 404);
-    exit;
+  endwhile; else :
+    get_template_part('loops/404');
   endif;
 ?>
 <div class="row">
