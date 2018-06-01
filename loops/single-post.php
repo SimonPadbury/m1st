@@ -7,7 +7,7 @@ The Single Post
 
 <?php if(have_posts()): while(have_posts()): the_post(); ?>
   <article role="article" id="post_<?php the_ID()?>" <?php post_class()?>>
-    <header class="mb-4">
+    <header>
       <h1>
         <?php the_title()?>
       </h1>
@@ -35,7 +35,7 @@ The Single Post
           <?php m1st_author_avatar(); ?>
           <p class="h4 card-title author-name"><?php the_author_posts_link(); ?></p>
           <p class="author-description"><?php m1st_author_description(); ?></p>
-          <p class="author-other-posts mb-0 border-top pt-3"><?php _e('Other posts by ', 'm1st'); the_author_posts_link(); ?></p>
+          <p class="author-other-posts><?php _e('Other posts by ', 'm1st'); the_author_posts_link(); ?></p>
         </div>
       </div><!-- /.author-bio -->
     </footer>
